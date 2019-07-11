@@ -98,6 +98,11 @@ git checkout branchname(US001)
 
 // merging 
 
-go to base barnch where you merge into 
+go to base branch where you merge into 
 
 git checkout master 
+
+git merge US001
+
+
+// delete branch
