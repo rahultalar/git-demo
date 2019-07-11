@@ -106,3 +106,14 @@ git merge US001
 
 
 // delete branch
+git branch -d US002
+
+
+//create and chekout new branch 
+
+git chekcout -b US002
+
+
+//HEAD 
+
+what is head 
