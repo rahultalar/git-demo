@@ -96,4 +96,8 @@ git branch US001
 git checkout branchname(US001)
 
 
+// merging 
 
+go to base barnch where you merge into 
+
+git checkout master 
