@@ -91,7 +91,7 @@ git branch
 
 git branch US001 
 
-//make barnch active 
+//make barnch active and switching to branch 
 
 git checkout branchname(US001)
 
