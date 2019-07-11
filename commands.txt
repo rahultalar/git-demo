@@ -1,0 +1,99 @@
+
+//set
+git config --global user.name "rahultalar"s
+git config --global user.email "rahultalar@gmail.com"
+
+//get
+
+git config --global user.name
+
+git --version 
+
+// new folder 
+mkdir git-workflow
+
+//check commits show log of all your commit history with commit id 
+git log 
+
+// git status 
+
+// this will show you diffrence between your working copy and staging file 
+git diff filename.txt
+
+// add file to staging area 
+git add . 
+
+
+//to commit into local repo 
+
+git commit -m "new file added"
+
+cloning repo means copied repo from github to local computer 
+
+git clone https://github.com/rahultalar/git-demo.git
+
+
+git status 
+it will show changes in the repo 
+
+
+WORKING DIRECTORY -- STAGING AREA (ready to commit if its in green in staing area) 
+
+git commit means taking files from staging area (green) and commit them locally. 
+here you have commited your change into local version control system. 
+its not yet pushed to github/gitlab whichever your remote cloud. Code is still at your local computer 
+ITs in your local version control database not on remote server 
+
+
+git diff 
+will show diff between your local changes and previous version 
+
+
+
+Undoing/Reverting/Resetting code changes### 
+
+undo uncommited changes in one file 
+
+git status 
+git checkout -- main.js
+
+undo uncommited changes in multiple files   main.js , index.html
+
+git checkout -- main.js index.html 
+or to undo all files  do 
+
+git checkout .
+
+
+
+Reverting your code to version that is not pushed 
+
+do git log and copy the  the id of current commit in local 
+
+do 
+git revert 1b462430ed17407deee64262c48bbf4b7cb08822
+a message will shown to commnd line just :q to escape this message 
+
+git revert without commit 
+
+git revert -n 1b462430ed17407deee64262c48bbf4b7cb08822
+
+// git reset to reset your branch locally to perticular commit 
+
+
+git reset --hard 1b462430ed17407deee64262c48bbf4b7cb08822
+
+
+
+// branching 
+//list all branch
+git branch
+
+git branch US001 
+
+//make barnch active 
+
+git checkout branchname(US001)
+
+
+
